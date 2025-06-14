@@ -26,6 +26,10 @@
                     </li>
                 @endif
             @endauth
+            <li class="{{ Request::is('products') ? 'active' : '' }}">
+                <a class="nav-link"
+                    href="{{ route('products.index') }}"><i class="fas fa-box"></i> <span>Products</span></a>
+            </li>
         </ul>
 
         {{-- <div class="hide-sidebar-mini mt-4 mb-4 p-3">
